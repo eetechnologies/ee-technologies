@@ -18,12 +18,13 @@ export default function Contact() {
       <section className="mx-auto max-w-content px-6 py-16">
         <div className="grid gap-10 md:grid-cols-2">
           <div className="space-y-6">
-            {/* TODO: replace with real contact details */}
+            {/* TODO: replace placeholder email with the real one */}
             <div className="flex items-start gap-4">
               <IconBoard className="h-8 w-8 shrink-0 text-orange" style={{ width: 28, height: 28 }} />
               <div>
                 <p className="font-display text-base font-semibold text-navy">Phone</p>
-                <p className="font-body text-sm text-ink/65">+94 7X XXX XXXX</p>
+                <p className="font-body text-sm text-ink/65">074 178 3280</p>
+                <p className="font-body text-sm text-ink/65">070 102 4769 (WhatsApp)</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
@@ -37,7 +38,7 @@ export default function Contact() {
               <IconWiring className="h-8 w-8 shrink-0 text-orange" style={{ width: 28, height: 28 }} />
               <div>
                 <p className="font-display text-base font-semibold text-navy">Service area</p>
-                <p className="font-body text-sm text-ink/65">Colombo and surrounding areas</p>
+                <p className="font-body text-sm text-ink/65">Colombo and Gampaha</p>
               </div>
             </div>
 

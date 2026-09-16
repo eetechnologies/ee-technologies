@@ -134,9 +134,10 @@ export default function Agreement() {
 
           <div className="rounded-2xl border border-line bg-navy/5 p-6">
             <p className="font-display text-base font-semibold text-navy">Contact us</p>
-            {/* TODO: replace with real contact details */}
+            {/* TODO: replace placeholder email with the real one */}
             <div className="mt-3 space-y-1.5 font-body text-sm text-ink/70">
-              <p>Phone: +94 7X XXX XXXX</p>
+              <p>Phone: 074 178 3280</p>
+              <p>WhatsApp: 070 102 4769</p>
               <p>Email: info@eetechnologies.lk</p>
             </div>
           </div>

@@ -30,10 +30,11 @@ export default function Footer() {
         <div>
           <h3 className="font-display text-sm font-semibold tracking-wide text-white/90">Get in touch</h3>
           <ul className="mt-4 space-y-2.5 font-body text-sm text-white/65">
-            {/* TODO: replace with real contact details */}
-            <li>+94 7X XXX XXXX</li>
+            {/* TODO: replace placeholder email with the real one */}
+            <li>074 178 3280</li>
+            <li>070 102 4769 (WhatsApp)</li>
             <li>info@eetechnologies.lk</li>
-            <li>Colombo, Sri Lanka</li>
+            <li>Gampaha, Sri Lanka</li>
           </ul>
         </div>
       </div>
