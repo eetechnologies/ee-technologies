@@ -1,6 +1,6 @@
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
-import { IconMeter, IconWiring, IconBoard } from "@/components/icons";
+import { IconMeter, IconWiring, IconPhone, IconChat } from "@/components/icons";
 
 export const metadata = {
   title: "Contact | E & E Technologies",
@@ -20,11 +20,17 @@ export default function Contact() {
           <div className="space-y-6">
             {/* TODO: replace placeholder email with the real one */}
             <div className="flex items-start gap-4">
-              <IconBoard className="h-8 w-8 shrink-0 text-orange" style={{ width: 28, height: 28 }} />
+              <IconPhone className="h-8 w-8 shrink-0 text-orange" style={{ width: 28, height: 28 }} />
               <div>
                 <p className="font-display text-base font-semibold text-navy">Phone</p>
-                <p className="font-body text-sm text-ink/65">074 178 3280</p>
-                <p className="font-body text-sm text-ink/65">070 102 4769 (WhatsApp)</p>
+                <p className="mt-1 flex items-center gap-1.5 font-body text-sm text-ink/65">
+                  <IconPhone className="h-4 w-4 shrink-0" style={{ width: 15, height: 15 }} />
+                  074 178 3280
+                </p>
+                <p className="mt-1 flex items-center gap-1.5 font-body text-sm text-ink/65">
+                  <IconChat className="h-4 w-4 shrink-0" style={{ width: 15, height: 15 }} />
+                  070 102 4769
+                </p>
               </div>
             </div>
             <div className="flex items-start gap-4">

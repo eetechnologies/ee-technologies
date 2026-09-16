@@ -82,6 +82,35 @@ export function IconMeter(props) {
   );
 }
 
+export function IconPhone(props) {
+  return base(
+    <>
+      <path
+        d="M11 6h5l2 6-3 2.5a16 16 0 0 0 7.5 7.5L25 19l6 2v5a3 3 0 0 1-3 3C17.5 29 8 19.5 8 9a3 3 0 0 1 3-3Z"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinejoin="round"
+      />
+    </>,
+    props
+  );
+}
+
+export function IconChat(props) {
+  return base(
+    <>
+      <path
+        d="M7 19c0-7.2 5.8-13 13-13s13 5.8 13 13-5.8 13-13 13c-1.8 0-3.5-.35-5-1L8 33l1.6-6.3A12.9 12.9 0 0 1 7 19Z"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinejoin="round"
+      />
+      <path d="M14.5 17.5h11M14.5 22.5h7" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+    </>,
+    props
+  );
+}
+
 export function IconShield(props) {
   return base(
     <>
