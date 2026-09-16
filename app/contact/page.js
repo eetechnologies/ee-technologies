@@ -30,12 +30,12 @@ export default function Contact() {
                   074 178 3280
                 </a>
                 <a
-                  href="https://wa.me/94701024769"
+                  href="https://wa.me/94719158920"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block font-body text-sm text-ink/65 hover:text-orange-dark"
                 >
-                  070 102 4769 (WhatsApp)
+                  071 915 8920 (WhatsApp)
                 </a>
               </div>
             </div>
