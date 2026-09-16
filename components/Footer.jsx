@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import { IconPhone, IconChat } from "@/components/icons";
 
 export default function Footer() {
   return (
@@ -33,20 +32,16 @@ export default function Footer() {
           <ul className="mt-4 space-y-2.5 font-body text-sm text-white/65">
             {/* TODO: replace placeholder email with the real one */}
             <li>
-              <a href="tel:+94741783280" className="flex items-center gap-1.5 hover:text-orange-light">
-                <IconPhone className="h-3.5 w-3.5 shrink-0" style={{ width: 14, height: 14 }} />
-                074 178 3280
-              </a>
+              <a href="tel:+94741783280" className="hover:text-orange-light">074 178 3280</a>
             </li>
             <li>
               <a
                 href="https://wa.me/94701024769"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1.5 hover:text-orange-light"
+                className="hover:text-orange-light"
               >
-                <IconChat className="h-3.5 w-3.5 shrink-0" style={{ width: 14, height: 14 }} />
-                070 102 4769
+                070 102 4769 (WhatsApp)
               </a>
             </li>
             <li>info@eetechnologies.lk</li>

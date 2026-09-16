@@ -1,6 +1,6 @@
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
-import { IconMeter, IconWiring, IconPhone, IconChat } from "@/components/icons";
+import { IconMeter, IconWiring, IconPhone } from "@/components/icons";
 
 export const metadata = {
   title: "Contact | E & E Technologies",
@@ -25,19 +25,17 @@ export default function Contact() {
                 <p className="font-display text-base font-semibold text-navy">Phone</p>
                 <a
                   href="tel:+94741783280"
-                  className="mt-1 flex items-center gap-1.5 font-body text-sm text-ink/65 hover:text-orange-dark"
+                  className="mt-1 block font-body text-sm text-ink/65 hover:text-orange-dark"
                 >
-                  <IconPhone className="h-4 w-4 shrink-0" style={{ width: 15, height: 15 }} />
                   074 178 3280
                 </a>
                 <a
                   href="https://wa.me/94701024769"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-1 flex items-center gap-1.5 font-body text-sm text-ink/65 hover:text-orange-dark"
+                  className="block font-body text-sm text-ink/65 hover:text-orange-dark"
                 >
-                  <IconChat className="h-4 w-4 shrink-0" style={{ width: 15, height: 15 }} />
-                  070 102 4769
+                  070 102 4769 (WhatsApp)
                 </a>
               </div>
             </div>
