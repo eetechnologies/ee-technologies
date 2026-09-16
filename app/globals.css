@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: theme("colors.paper");
+    color: theme("colors.ink");
+  }
+  ::selection {
+    background-color: theme("colors.orange.light");
+    color: theme("colors.navy.ink");
+  }
+  :focus-visible {
+    outline: 2px solid theme("colors.orange.DEFAULT");
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .input {
+    width: 100%;
+    border-radius: 0.75rem;
+    border: 1px solid theme("colors.line");
+    background-color: white;
+    padding: 0.65rem 0.9rem;
+    font-family: theme("fontFamily.body");
+    font-size: 0.9rem;
+    color: theme("colors.ink");
+  }
+  .input:focus {
+    outline: none;
+    border-color: theme("colors.orange.DEFAULT");
+    box-shadow: 0 0 0 3px rgba(226, 104, 15, 0.15);
+  }
+}
+
+@layer utilities {
+  .trace-dot {
+    position: relative;
+  }
+  .trace-dot::before {
+    content: "";
+    position: absolute;
+    left: -6px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 9999px;
+    background: theme("colors.orange.DEFAULT");
+    box-shadow: 0 0 0 4px rgba(226, 104, 15, 0.15);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
