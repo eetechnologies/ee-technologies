@@ -37,9 +37,12 @@ function doPost(e) {
     const folder = getFolder();
 
     let fileUrl = "";
-    if (e.files && e.files.paymentSlip) {
-      const uploaded = e.files.paymentSlip;
-      const savedFile = folder.createFile(uploaded);
+    if (params.paymentSlipBase64) {
+      const bytes = Utilities.base64Decode(params.paymentSlipBase64);
+      const mimeType = params.paymentSlipType || "application/octet-stream";
+      const fileName = params.paymentSlipName || "payment-slip";
+      const blob = Utilities.newBlob(bytes, mimeType, fileName);
+      const savedFile = folder.createFile(blob);
       fileUrl = savedFile.getUrl();
     }
 

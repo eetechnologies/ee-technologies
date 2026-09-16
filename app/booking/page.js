@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import PageHero from "@/components/PageHero";
 
 const SERVICE_TYPES = ["Electrical inspection", "Solar inspection"];
@@ -20,12 +20,22 @@ const CATEGORY_OPTIONS = {
 
 const SERVICE_AREAS = ["Colombo", "Gampaha"];
 
+function fileToBase64(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => resolve(reader.result.split(",")[1]);
+    reader.onerror = reject;
+    reader.readAsDataURL(file);
+  });
+}
+
 // Deployed Google Apps Script Web App (see /scripts/apps-script/Code.gs),
 // running under eetechnologies95@gmail.com.
 const APPS_SCRIPT_URL =
   "https://script.google.com/macros/s/AKfycbzgOPOAzs6vUNz03_pmp0Om4HryhRjvEKbza7U_Xh7qg0RoYlEeyqtYvV2jAQToRc4/exec";
 
 export default function Booking() {
+  const fileInputRef = useRef(null);
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
@@ -59,6 +69,13 @@ export default function Booking() {
     setForm((prev) => ({ ...prev, paymentSlip: e.target.files[0] || null }));
   }
 
+  function handleRemoveFile() {
+    setForm((prev) => ({ ...prev, paymentSlip: null }));
+    if (fileInputRef.current) {
+      fileInputRef.current.value = "";
+    }
+  }
+
   async function handleSubmit(e) {
     e.preventDefault();
 
@@ -83,7 +100,16 @@ export default function Booking() {
       data.append("preferredDate", form.preferredDate);
       data.append("message", form.message);
       if (form.paymentSlip) {
-        data.append("paymentSlip", form.paymentSlip);
+        // Apps Script web apps can't reliably parse multipart file blobs,
+        // so the file is base64-encoded and decoded back into a file on
+        // the backend instead.
+        const base64 = await fileToBase64(form.paymentSlip);
+        data.append("paymentSlipBase64", base64);
+        data.append("paymentSlipName", form.paymentSlip.name);
+        data.append(
+          "paymentSlipType",
+          form.paymentSlip.type || "application/octet-stream"
+        );
       }
 
       // Apps Script web apps don't return CORS headers on the redirected
@@ -266,12 +292,22 @@ export default function Booking() {
 
                 <Field label="Payment slip">
                   <input
+                    ref={fileInputRef}
                     type="file"
                     name="paymentSlip"
                     accept="image/*,.pdf"
                     onChange={handleFileChange}
                     className="input file:mr-4 file:rounded-full file:border-0 file:bg-navy file:px-4 file:py-1.5 file:font-body file:text-xs file:font-medium file:text-white"
                   />
+                  {form.paymentSlip && (
+                    <button
+                      type="button"
+                      onClick={handleRemoveFile}
+                      className="mt-1.5 font-body text-xs text-orange-dark hover:underline"
+                    >
+                      Remove file
+                    </button>
+                  )}
                   <p className="mt-1.5 font-body text-xs text-ink/50">
                     If you've already made a booking deposit, attach the payment slip here (optional).
                   </p>
