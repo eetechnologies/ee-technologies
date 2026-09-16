@@ -23,14 +23,22 @@ export default function Contact() {
               <IconPhone className="h-8 w-8 shrink-0 text-orange" style={{ width: 28, height: 28 }} />
               <div>
                 <p className="font-display text-base font-semibold text-navy">Phone</p>
-                <p className="mt-1 flex items-center gap-1.5 font-body text-sm text-ink/65">
+                <a
+                  href="tel:+94741783280"
+                  className="mt-1 flex items-center gap-1.5 font-body text-sm text-ink/65 hover:text-orange-dark"
+                >
                   <IconPhone className="h-4 w-4 shrink-0" style={{ width: 15, height: 15 }} />
                   074 178 3280
-                </p>
-                <p className="mt-1 flex items-center gap-1.5 font-body text-sm text-ink/65">
+                </a>
+                <a
+                  href="https://wa.me/94701024769"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-1 flex items-center gap-1.5 font-body text-sm text-ink/65 hover:text-orange-dark"
+                >
                   <IconChat className="h-4 w-4 shrink-0" style={{ width: 15, height: 15 }} />
                   070 102 4769
-                </p>
+                </a>
               </div>
             </div>
             <div className="flex items-start gap-4">

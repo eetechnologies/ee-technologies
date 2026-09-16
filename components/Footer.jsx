@@ -32,13 +32,22 @@ export default function Footer() {
           <h3 className="font-display text-sm font-semibold tracking-wide text-white/90">Get in touch</h3>
           <ul className="mt-4 space-y-2.5 font-body text-sm text-white/65">
             {/* TODO: replace placeholder email with the real one */}
-            <li className="flex items-center gap-1.5">
-              <IconPhone className="h-3.5 w-3.5 shrink-0" style={{ width: 14, height: 14 }} />
-              074 178 3280
+            <li>
+              <a href="tel:+94741783280" className="flex items-center gap-1.5 hover:text-orange-light">
+                <IconPhone className="h-3.5 w-3.5 shrink-0" style={{ width: 14, height: 14 }} />
+                074 178 3280
+              </a>
             </li>
-            <li className="flex items-center gap-1.5">
-              <IconChat className="h-3.5 w-3.5 shrink-0" style={{ width: 14, height: 14 }} />
-              070 102 4769
+            <li>
+              <a
+                href="https://wa.me/94701024769"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 hover:text-orange-light"
+              >
+                <IconChat className="h-3.5 w-3.5 shrink-0" style={{ width: 14, height: 14 }} />
+                070 102 4769
+              </a>
             </li>
             <li>info@eetechnologies.lk</li>
             <li>Gampaha, Sri Lanka</li>
