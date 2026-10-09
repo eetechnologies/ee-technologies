@@ -55,21 +55,20 @@ export default function Agreement() {
               appointment, we&apos;ll refund your payment within a week. No-shows are not
               eligible for a refund.
             </p>
-            {/* TODO: replace with real bank details before publishing this site. */}
             <div className="rounded-2xl border border-line bg-white p-6">
               <p className="font-medium text-ink">Bank details for payment</p>
               <dl className="mt-3 space-y-1.5">
                 <div className="flex flex-wrap gap-x-2">
                   <dt className="font-medium text-ink">Account name:</dt>
-                  <dd>Account holder name</dd>
+                  <dd>A A A T Bandara</dd>
                 </div>
                 <div className="flex flex-wrap gap-x-2">
                   <dt className="font-medium text-ink">Bank name:</dt>
-                  <dd>Bank &amp; branch</dd>
+                  <dd>People&apos;s Bank, Pugoda Branch</dd>
                 </div>
                 <div className="flex flex-wrap gap-x-2">
                   <dt className="font-medium text-ink">Account number:</dt>
-                  <dd>0000 0000 0000</dd>
+                  <dd>093200130032360</dd>
                 </div>
               </dl>
             </div>
