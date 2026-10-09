@@ -51,9 +51,8 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-white/10">
-        <div className="mx-auto flex max-w-content flex-col items-center justify-between gap-2 px-6 py-5 font-body text-xs text-white/45 md:flex-row">
+        <div className="mx-auto flex max-w-content flex-col items-center justify-center gap-2 px-6 py-5 font-body text-xs text-white/45 md:flex-row">
           <span>&copy; {new Date().getFullYear()} E &amp; E Technologies. All rights reserved.</span>
-          <span>Site content is placeholder text — replace before publishing.</span>
         </div>
       </div>
     </footer>

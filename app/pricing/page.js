@@ -5,7 +5,6 @@ export const metadata = {
   title: "Pricing | E & E Technologies",
 };
 
-// TODO: these are placeholder starting prices only — replace with your real rates.
 const electricalPackages = [
   {
     name: "Single-phase inspection",
@@ -103,9 +102,8 @@ export default function Pricing() {
             <PackageGrid packages={solarPackages} />
           </div>
           <p className="mt-10 max-w-2xl font-body text-sm text-ink/55">
-            Prices above are example starting figures for illustration — replace them with
-            your actual rates before publishing this site. Inspection pricing can vary based
-            on property size, system size, and how detailed a report you need.
+            Prices above are starting figures — the final price can vary based on property
+            size, system size, and how detailed a report you need.
           </p>
         </div>
       </section>

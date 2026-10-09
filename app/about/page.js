@@ -45,11 +45,6 @@ export default function About() {
               out why a solar system is underperforming, we walk you through what we found
               and what it will cost before the inspection begins.
             </p>
-            <p className="mt-4">
-              {/* TODO: swap in real founding story, team size, years active, certifications, etc. */}
-              This page is a starting point — replace this section with your team's real
-              background, certifications, and story.
-            </p>
           </div>
 
           <div className="flex flex-col gap-8">

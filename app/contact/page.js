@@ -16,7 +16,7 @@ export default function Contact() {
       />
 
       <section className="mx-auto max-w-content px-6 py-16">
-        <div className="grid gap-10 md:grid-cols-2">
+        <div className="max-w-md">
           <div className="space-y-6">
             {/* TODO: replace placeholder email with the real one */}
             <div className="flex items-start gap-4">
@@ -60,10 +60,6 @@ export default function Contact() {
             >
               Request an inspection instead
             </Link>
-          </div>
-
-          <div className="flex min-h-[280px] items-center justify-center rounded-2xl border border-dashed border-line bg-white font-body text-sm text-ink/40">
-            Map placeholder — embed your Google Maps location here
           </div>
         </div>
       </section>
