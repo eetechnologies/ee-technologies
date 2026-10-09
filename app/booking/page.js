@@ -2,6 +2,8 @@
 
 import { useRef, useState } from "react";
 import PageHero from "@/components/PageHero";
+import PackageGrid from "@/components/PackageGrid";
+import { electricalPackages, solarPackages } from "@/components/packages";
 
 const SERVICE_TYPES = ["Electrical inspection", "Solar inspection"];
 
@@ -350,6 +352,24 @@ export default function Booking() {
                 </button>
               </form>
             )}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-t border-line bg-white">
+        <div className="mx-auto max-w-content px-6 py-16">
+          <h2 className="font-display text-2xl font-semibold text-navy">Electrical inspection pricing</h2>
+          <div className="mt-8">
+            <PackageGrid packages={electricalPackages} hideCta />
+          </div>
+        </div>
+      </section>
+
+      <section className="border-t border-line">
+        <div className="mx-auto max-w-content px-6 py-16">
+          <h2 className="font-display text-2xl font-semibold text-navy">Solar inspection pricing</h2>
+          <div className="mt-8">
+            <PackageGrid packages={solarPackages} hideCta />
           </div>
         </div>
       </section>
