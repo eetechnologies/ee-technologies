@@ -162,6 +162,26 @@ export default function Booking() {
                 Expect a reply within a day or two with next steps.
               </li>
             </ul>
+
+            <div className="mt-6 rounded-2xl border border-line bg-white p-5">
+              <p className="font-display text-sm font-semibold text-navy">
+                Bank details for payment
+              </p>
+              <dl className="mt-2 space-y-1 text-sm">
+                <div className="flex flex-wrap gap-x-2">
+                  <dt className="font-medium text-ink">Account name:</dt>
+                  <dd>A A A T Bandara</dd>
+                </div>
+                <div className="flex flex-wrap gap-x-2">
+                  <dt className="font-medium text-ink">Bank name:</dt>
+                  <dd>People&apos;s Bank, Pugoda Branch</dd>
+                </div>
+                <div className="flex flex-wrap gap-x-2">
+                  <dt className="font-medium text-ink">Account number:</dt>
+                  <dd>093200130032360</dd>
+                </div>
+              </dl>
+            </div>
           </div>
 
           <div className="rounded-2xl border border-line bg-white p-6 sm:p-8">
@@ -289,26 +309,6 @@ export default function Booking() {
                     placeholder="What's going on, or what would you like inspected?"
                   />
                 </Field>
-
-                <div className="rounded-2xl border border-line bg-paper p-5">
-                  <p className="font-display text-sm font-semibold text-navy">
-                    Bank details for payment
-                  </p>
-                  <dl className="mt-2 space-y-1 font-body text-sm text-ink/70">
-                    <div className="flex flex-wrap gap-x-2">
-                      <dt className="font-medium text-ink">Account name:</dt>
-                      <dd>A A A T Bandara</dd>
-                    </div>
-                    <div className="flex flex-wrap gap-x-2">
-                      <dt className="font-medium text-ink">Bank name:</dt>
-                      <dd>People&apos;s Bank, Pugoda Branch</dd>
-                    </div>
-                    <div className="flex flex-wrap gap-x-2">
-                      <dt className="font-medium text-ink">Account number:</dt>
-                      <dd>093200130032360</dd>
-                    </div>
-                  </dl>
-                </div>
 
                 <Field label="Payment slip">
                   <input
