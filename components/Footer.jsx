@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { IconFacebook } from "@/components/icons";
 
 export default function Footer() {
   return (
@@ -14,6 +15,15 @@ export default function Footer() {
             Electrical and solar inspections, done properly. Serving homes and small
             businesses with clear, independent inspection reports.
           </p>
+          <a
+            href="https://www.facebook.com/EandETechnologiesLK"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="E & E Technologies on Facebook"
+            className="mt-5 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white text-navy-ink transition-colors hover:bg-orange-light hover:text-white"
+          >
+            <IconFacebook style={{ width: 24, height: 24 }} />
+          </a>
         </div>
 
         <div>

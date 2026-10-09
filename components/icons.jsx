@@ -96,6 +96,18 @@ export function IconPhone(props) {
   );
 }
 
+export function IconFacebook(props) {
+  return base(
+    <>
+      <path
+        d="M24.8 10.4h-3.2a4.8 4.8 0 0 0-4.8 4.8v3.2h-3.2v4.8h3.2v12.8h4.8v-12.8h3.84l.8-4.8h-4.8v-2.4a1.6 1.6 0 0 1 1.6-1.6h2.4V10.4Z"
+        fill="currentColor"
+      />
+    </>,
+    props
+  );
+}
+
 export function IconShield(props) {
   return base(
     <>
