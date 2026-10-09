@@ -9,14 +9,14 @@ export const metadata = {
 const electricalPackages = [
   {
     name: "Single-phase inspection",
-    range: "LKR 7,000",
+    range: "LKR 6,000",
     blurb: "For standard single-phase electrical systems — most homes and small units.",
     points: ["Wiring & circuit checks", "Distribution board inspection", "Written report"],
     highlighted: true,
   },
   {
     name: "Three-phase inspection",
-    range: "LKR 9,500",
+    range: "LKR 9,000",
     blurb: "For three-phase electrical systems, typically larger homes, workshops, or small commercial units.",
     points: ["Full circuit & board inspection", "Load balancing check", "Written report"],
   },
@@ -31,14 +31,14 @@ const electricalPackages = [
 const solarPackages = [
   {
     name: "Single-phase solar (up to 5kW)",
-    range: "LKR 7,000",
+    range: "LKR 6,000",
     blurb: "For single-phase solar systems up to 5kW — typical for most households.",
     points: ["Panel & mounting check", "Inverter & cabling check", "Written report"],
     highlighted: true,
   },
   {
     name: "Three-phase solar (up to 5kW)",
-    range: "LKR 9,500",
+    range: "LKR 9,000",
     blurb: "For three-phase solar systems up to 5kW.",
     points: ["Panel & mounting check", "Inverter & cabling check", "Written report"],
   },

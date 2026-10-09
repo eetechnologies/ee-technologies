@@ -167,7 +167,11 @@ export default function Booking() {
               <p className="font-display text-sm font-semibold text-navy">
                 Bank details for payment
               </p>
-              <dl className="mt-2 space-y-1 text-sm">
+              <p className="mt-1 font-body text-xs text-ink/60">
+                If you&apos;d like to pay a deposit in advance, you can transfer to the
+                account below and attach the slip when you submit.
+              </p>
+              <dl className="mt-3 space-y-1 text-sm">
                 <div className="flex flex-wrap gap-x-2">
                   <dt className="font-medium text-ink">Account name:</dt>
                   <dd>A A A T Bandara</dd>
