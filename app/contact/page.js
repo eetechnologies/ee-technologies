@@ -18,7 +18,6 @@ export default function Contact() {
       <section className="mx-auto max-w-content px-6 py-16">
         <div className="max-w-md">
           <div className="space-y-6">
-            {/* TODO: replace placeholder email with the real one */}
             <div className="flex items-start gap-4">
               <IconPhone className="h-8 w-8 shrink-0 text-orange" style={{ width: 28, height: 28 }} />
               <div>

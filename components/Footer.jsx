@@ -40,7 +40,6 @@ export default function Footer() {
         <div>
           <h3 className="font-display text-sm font-semibold tracking-wide text-white/90">Get in touch</h3>
           <ul className="mt-4 space-y-2.5 font-body text-sm text-white/65">
-            {/* TODO: replace placeholder email with the real one */}
             <li>
               <a href="tel:+94741783280" className="hover:text-orange-light">074 178 3280</a>
             </li>
