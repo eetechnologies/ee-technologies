@@ -136,7 +136,12 @@ export default function Agreement() {
             <div className="mt-3 space-y-1.5 font-body text-sm text-ink/70">
               <p>Phone: 074 178 3280</p>
               <p>WhatsApp: 071 915 8920</p>
-              <p>Email: info@eetechnologies.lk</p>
+              <p>
+                Email:{" "}
+                <a href="mailto:info@eetechnologies.lk" className="hover:text-orange-dark">
+                  info@eetechnologies.lk
+                </a>
+              </p>
             </div>
           </div>
 

@@ -42,7 +42,12 @@ export default function Contact() {
               <IconMeter className="h-8 w-8 shrink-0 text-orange" style={{ width: 28, height: 28 }} />
               <div>
                 <p className="font-display text-base font-semibold text-navy">Email</p>
-                <p className="font-body text-sm text-ink/65">info@eetechnologies.lk</p>
+                <a
+                  href="mailto:info@eetechnologies.lk"
+                  className="font-body text-sm text-ink/65 hover:text-orange-dark"
+                >
+                  info@eetechnologies.lk
+                </a>
               </div>
             </div>
             <div className="flex items-start gap-4">

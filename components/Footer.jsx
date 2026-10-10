@@ -53,7 +53,11 @@ export default function Footer() {
                 071 915 8920 (WhatsApp)
               </a>
             </li>
-            <li>info@eetechnologies.lk</li>
+            <li>
+              <a href="mailto:info@eetechnologies.lk" className="hover:text-orange-light">
+                info@eetechnologies.lk
+              </a>
+            </li>
             <li>Gampaha, Sri Lanka</li>
           </ul>
         </div>
